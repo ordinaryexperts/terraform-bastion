@@ -1,6 +1,6 @@
 resource "aws_cloudformation_stack" "bastion" {
-  name = "${var.name}-${var.env}-bastion-stack"
-  on_failure   = "DELETE"
+  name       = "${var.name}-${var.env}-bastion-stack"
+  on_failure = "DELETE"
 
   parameters {
     Active        = "${var.active}"
